@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bakir Zanoun – Computer Engineer (M.Eng.) · Software, DevOps &amp; IoT</title>
+<meta name="description" content="Abo Bakir Fawaz Zanoun – Computer Engineer (M.Eng., HTW Berlin) mit Erfahrung in GitLab CI/CD, Docker und Trivy (DevSecOps), .NET/C# sowie Embedded Systems (Raspberry Pi, I2C, InfluxDB). Berlin.">
+<meta name="author" content="Abo Bakir Fawaz Zanoun">
+<meta name="theme-color" content="#101C27">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bakir Zanoun – Computer Engineer (M.Eng.)">
+<meta property="og:description" content="Software, DevOps & IoT aus Berlin. CI/CD mit automatisierten Sicherheitsscans, .NET-Anwendungen, Sensorik mit Raspberry Pi.">
+<meta property="og:image" content="https://bakirzanoun.de/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://bakirzanoun.de/">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/bricolage-grotesque-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css?v=7">
+<script>
+  (function(){try{
+    var t=localStorage.getItem('bz-theme'); if(t) document.documentElement.setAttribute('data-theme',t);
+  }catch(e){}
+  document.documentElement.className='js';})();
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Abo Bakir Fawaz Zanoun","alternateName":"Bakir Zanoun","jobTitle":"Computer Engineer (M.Eng.)","address":{"@type":"PostalAddress","addressLocality":"Berlin","addressCountry":"DE"},"alumniOf":{"@type":"CollegeOrUniversity","name":"HTW Berlin"},"email":"mailto:bakirzanoun@gmail.com","sameAs":["https://www.linkedin.com/in/bakir-zanoun-226b09108"],"knowsAbout":["C#",".NET","ASP.NET","Python","C","GitLab CI/CD","DevSecOps","Docker","Trivy","IoT","I2C","InfluxDB","LoRaWAN","MQTT","Raspberry Pi"],"knowsLanguage":["ar","de","en","fr"]}
+</script>
+</head>
+<body data-lang="de">
+<a class="skip" href="#main">Zum Inhalt springen</a>
+
+<header class="site-header" id="header">
+  <div class="container nav">
+    <a class="brand" href="#top" aria-label="Bakir Zanoun – Start"><img class="brand-avatar" src="assets/img/avatar.jpg" width="32" height="32" alt="">Bakir Zanoun</a>
+    <ul class="nav-links">
+      <li><a href="#arbeitsweise"><span class="de">Arbeitsweise</span><span class="en">How I work</span></a></li>
+      <li><a href="#devops">DevOps</a></li>
+      <li><a href="#hardware">Hardware</a></li>
+      <li><a href="#projekte"><span class="de">Projekte</span><span class="en">Projects</span></a></li>
+      <li><a href="#werdegang"><span class="de">Werdegang</span><span class="en">Experience</span></a></li>
+      <li><a href="#kenntnisse"><span class="de">Kenntnisse</span><span class="en">Skills</span></a></li>
+      <li><a href="#kontakt"><span class="de">Kontakt</span><span class="en">Contact</span></a></li>
+    </ul>
+    <div class="nav-tools">
+      <div class="seg" role="group" aria-label="Sprache / Language">
+        <button type="button" data-lang="de" aria-pressed="true">DE</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Menü" aria-expanded="false" aria-controls="mobileNav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Hell/Dunkel umschalten">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" hidden aria-label="Mobile"><ul>
+      <li><a href="#arbeitsweise"><span class="de">Arbeitsweise</span><span class="en">How I work</span></a></li>
+      <li><a href="#devops">DevOps</a></li>
+      <li><a href="#hardware">Hardware</a></li>
+      <li><a href="#projekte"><span class="de">Projekte</span><span class="en">Projects</span></a></li>
+      <li><a href="#werdegang"><span class="de">Werdegang</span><span class="en">Experience</span></a></li>
+      <li><a href="#kenntnisse"><span class="de">Kenntnisse</span><span class="en">Skills</span></a></li>
+      <li><a href="#kontakt"><span class="de">Kontakt</span><span class="en">Contact</span></a></li>
+    </ul>
+    <a class="btn primary" href="cv/Bakir_Zanoun_Lebenslauf.pdf" download><span class="de">Lebenslauf (PDF)</span><span class="en">Download CV (PDF)</span></a>
+  </nav>
+</header>
+
+<main id="main">
+<!-- Hero -->
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="status intro" style="--i:0"><span class="de">Verfügbar ab sofort · Berlin &amp; remote</span><span class="en">Available now · Berlin &amp; remote</span></span>
+      <h1 class="intro" style="--i:1">Bakir Zanoun<br><span class="thin"><span class="de">baut Software, die sicher ausgeliefert wird.</span><span class="en">builds software that ships safely.</span></span></h1>
+      <p class="lead intro" style="--i:2">
+        <span class="de">Computer Engineer (M.Eng., HTW Berlin) mit drei Jahren Praxis bei der AUCOTEAM GmbH. Ich verbinde <b>CI/CD mit GitLab, Docker und Trivy</b>, <b>Softwareentwicklung mit .NET und C#</b> und <b>Embedded-Systeme</b> vom Mikrocontroller bis zur Datenbank.</span>
+        <span class="en">Computer Engineer (M.Eng., HTW Berlin) with three years of hands-on work at AUCOTEAM GmbH. I combine <b>CI/CD with GitLab, Docker and Trivy</b>, <b>software development with .NET and C#</b> and <b>embedded systems</b> from the microcontroller to the database.</span>
+      </p>
+      <div class="roles intro" style="--i:3">
+        <span class="roles-k"><span class="de">Zielrollen</span><span class="en">Target roles</span></span>
+        <span>DevOps / Platform Engineer</span><span>Embedded Software Engineer</span><span>Software Engineer .NET</span>
+      </div>
+      <div class="cta-row intro" style="--i:3">
+        <a class="btn primary" href="cv/Bakir_Zanoun_Lebenslauf.pdf" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 17v3h16v-3"/></svg>
+          <span class="de">Lebenslauf (PDF)</span><span class="en">Download CV (PDF)</span>
+        </a>
+        <a class="btn" href="#kontakt"><span class="de">Kontakt aufnehmen</span><span class="en">Get in touch</span></a>
+      </div>
+      <ul class="socials intro" style="--i:4">
+        <li><a href="https://www.linkedin.com/in/bakir-zanoun-226b09108" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zm7 0h3.8v1.5h.05c.53-1 1.83-1.8 3.45-1.8 3.7 0 4.2 2.3 4.2 5.3v6h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8v5.4h-4z"/></svg>LinkedIn</a></li>
+        <li><a href="https://github.com/Bakir-Alnuaimi" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>GitHub</a></li>
+        <li><span class="loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Berlin</span></li>
+      </ul>
+    </div>
+
+    <div class="hero-visual intro" style="--i:2">
+      <div class="portrait">
+        <picture>
+          <source srcset="assets/img/portrait.webp" type="image/webp">
+          <img src="assets/img/portrait.jpg" width="880" height="1100" alt="Porträt von Bakir Zanoun" fetchpriority="high">
+        </picture>
+      </div>
+      <div class="float-chip c1"><span class="dot ok"></span>M.Eng. · HTW Berlin</div>
+      <div class="float-chip c2"><span class="dot acc"></span>GitLab CI · Docker · Trivy</div>
+      <div class="float-chip c3"><span class="dot warm"></span>ESP32 · STM32 · Raspberry Pi</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <ul class="stats intro" style="--i:5">
+      <li><b data-count="3">3</b><span class="de">Jahre Praxis bei AUCOTEAM</span><span class="en">years at AUCOTEAM</span></li>
+      <li><b data-count="2">2</b><span class="de">Abschlussarbeiten aus der Industrie</span><span class="en">theses written in industry</span></li>
+      <li><b data-count="3">3</b><span class="de">Arbeitssprachen: DE · EN · AR</span><span class="en">working languages: DE · EN · AR</span></li>
+      <li><b>M.Eng.</b><span class="de">Computer Engineering, 2026</span><span class="en">Computer Engineering, 2026</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Profil -->
+<section class="glance-wrap" id="profil" aria-label="Auf einen Blick">
+  <div class="container">
+    <div class="glance reveal">
+      <div class="glance-head">
+        <p class="eyebrow"><span class="de">Auf einen Blick</span><span class="en">At a glance</span></p>
+        <h2><span class="de">Das Wichtigste in 30 Sekunden</span><span class="en">The essentials in 30 seconds</span></h2>
+      </div>
+      <dl class="facts-grid">
+        <div><dt><span class="de">Verfügbarkeit</span><span class="en">Availability</span></dt><dd><span class="de">Ab sofort, Vollzeit</span><span class="en">Immediately, full-time</span></dd></div>
+        <div><dt><span class="de">Standort</span><span class="en">Location</span></dt><dd><span class="de">Berlin · vor Ort, hybrid oder remote</span><span class="en">Berlin · on-site, hybrid or remote</span></dd></div>
+        <div><dt><span class="de">Arbeitserlaubnis</span><span class="en">Work permit</span></dt><dd><span class="de">Deutsche Staatsangehörigkeit, kein Visum nötig</span><span class="en">German citizen, no visa required</span></dd></div>
+        <div><dt><span class="de">Abschluss</span><span class="en">Degree</span></dt><dd>M.Eng. Computer Engineering · HTW Berlin · 09/2026</dd></div>
+        <div><dt><span class="de">Praxis</span><span class="en">Experience</span></dt><dd><span class="de">3 Jahre AUCOTEAM GmbH: CI/CD, .NET, Embedded</span><span class="en">3 years at AUCOTEAM GmbH: CI/CD, .NET, embedded</span></dd></div>
+        <div><dt><span class="de">Sprachen</span><span class="en">Languages</span></dt><dd><span class="de">Deutsch, Englisch fließend · Arabisch Muttersprache</span><span class="en">German, English fluent · Arabic native</span></dd></div>
+      </dl>
+      <div class="glance-actions">
+        <a class="btn primary" href="cv/Bakir_Zanoun_Lebenslauf.pdf" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 17v3h16v-3"/></svg>
+          <span class="de">Lebenslauf (PDF)</span><span class="en">Download CV (PDF)</span></a>
+        <button class="btn" type="button" id="copyMail2" data-mail="bakirzanoun@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>
+          <span class="lbl"><span class="de">E-Mail kopieren</span><span class="en">Copy e-mail</span></span></button>
+        <a class="btn" href="https://www.linkedin.com/in/bakir-zanoun-226b09108" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Arbeitsweise -->
+<section class="block" id="arbeitsweise">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow"><span class="de">Arbeitsweise</span><span class="en">How I work</span></p>
+      <div>
+        <h2><span class="de">Wie ich an Aufgaben herangehe</span><span class="en">How I approach a task</span></h2>
+        <p><span class="de">Vier Grundsätze, die sich durch meine Projekte ziehen, von der Sensorik bis zur Pipeline.</span><span class="en">Four principles that run through my projects, from sensor hardware to the delivery pipeline.</span></p>
+      </div>
+    </div>
+    <div class="principles reveal">
+      <article class="pr">
+        <span class="step">01 · <span class="de">Automatisieren</span><span class="en">Automate</span></span>
+        <h3><span class="de">Was sich wiederholt, macht die Pipeline</span><span class="en">If it repeats, the pipeline does it</span></h3>
+        <p><span class="de">Test, Build, Scan und Push laufen bei jedem Push automatisch. Jedes Image trägt ein Datums-Tag und ist nachvollziehbar. Das Deployment bleibt eine bewusste, manuelle Freigabe (Continuous Delivery).</span><span class="en">Test, build, scan and push run automatically on every push. Every image carries a date tag and stays traceable. Deployment remains a deliberate manual release (continuous delivery).</span></p>
+      </article>
+      <article class="pr">
+        <span class="step">02 · <span class="de">Sicherheit</span><span class="en">Security</span></span>
+        <h3><span class="de">Sicherheit ist ein Pipeline-Schritt, kein Nachgedanke</span><span class="en">Security is a pipeline stage, not an afterthought</span></h3>
+        <p><span class="de">Jedes neue Image wird mit <code>trivy</code> gescannt: CRITICAL stoppt die Pipeline, HIGH landet im Report. Weil täglich neue CVEs erscheinen, scannt zusätzlich ein Cron-Job alle Images in der Registry neu. Das war der Kern meiner Masterarbeit.</span><span class="en">Every new image is scanned with <code>trivy</code>: CRITICAL stops the pipeline, HIGH goes into the report. Because new CVEs appear every day, a cron job also re-scans every image in the registry. That was the core of my master's thesis.</span></p>
+      </article>
+      <article class="pr">
+        <span class="step">03 · <span class="de">System verstehen</span><span class="en">Know the system</span></span>
+        <h3><span class="de">Vom Sensor bis zur Registry</span><span class="en">From sensor to registry</span></h3>
+        <p><span class="de">Ich arbeite gern über Schichten hinweg: vom Sensor am I2C-Bus über Python bis zur Zeitreihendatenbank, vom Unit-Test bis zum Image in der Registry. Wer die ganze Kette kennt, findet Fehler schneller.</span><span class="en">I like working across layers: from a sensor on the I2C bus through Python to a time-series database, from a unit test to an image in the registry. Knowing the whole chain makes bugs easier to find.</span></p>
+      </article>
+      <article class="pr">
+        <span class="step">04 · <span class="de">Kommunikation</span><span class="en">Communication</span></span>
+        <h3><span class="de">Entscheidungen begründen, Ergebnisse teilen</span><span class="en">Justify decisions, share results</span></h3>
+        <p><span class="de">Bevor ich ein Werkzeug wähle, vergleiche ich die Optionen, zum Beispiel drei Registry-Varianten oder drei Datenbanken. Pipeline-Ergebnisse landen automatisch in Microsoft Teams, damit das Team sie sofort sieht. Ich arbeite auf Deutsch, Englisch und Arabisch.</span><span class="en">Before choosing a tool, I compare the options, for example three registry types or three databases. Pipeline results are posted to Microsoft Teams automatically so the team sees them right away. I work in German, English and Arabic.</span></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- DevOps -->
+<section class="block" id="devops">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow">DevOps &amp; IoT</p>
+      <div>
+        <h2><span class="de">Architekturen, die ich gebaut habe</span><span class="en">Architectures I have built</span></h2>
+        <p><span class="de">Vereinfachte Darstellungen meiner Masterarbeit (CI/CD mit Sicherheitsscans) und meiner Bachelorarbeit (Multisensor-Prüfstand), beide umgesetzt bei der AUCOTEAM GmbH.</span><span class="en">Simplified views of my master's thesis (CI/CD with security scans) and my bachelor's thesis (multi-sensor test rig), both carried out at AUCOTEAM GmbH.</span></p>
+      </div>
+    </div>
+
+    <figure class="diagram reveal">
+      <figcaption>
+        <span class="kind">CI/CD · DevSecOps · <span class="de">Masterarbeit</span><span class="en">Master's thesis</span></span>
+        <strong><span class="de">GitLab-Pipeline mit dualer Trivy-Scan-Strategie</span><span class="en">GitLab pipeline with a dual Trivy scanning strategy</span></strong>
+        <span class="muted"><span class="de">Push-Scan für jedes neue Image, Scheduled-Scan für alle Images in der Registry</span><span class="en">Push scan for every new image, scheduled scan for every image in the registry</span></span>
+      </figcaption>
+      <div class="diagram-scroll">
+        <svg class="pipe-svg" viewBox="0 0 1000 340" role="img" aria-labelledby="pipeTitle">
+          <title id="pipeTitle">GitLab CI/CD pipeline: test, build, Trivy scan, gate, push to private registry, Microsoft Teams notification, plus scheduled re-scan of registry images</title>
+          <defs>
+            <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" class="d-arrowhead"/></marker>
+            <marker id="arrBad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" class="d-bad-fill"/></marker>
+            <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" class="d-acc-fill"/></marker>
+          </defs>
+
+          <rect x="136" y="28" width="856" height="152" rx="14" class="d-frame"/>
+          <text x="152" y="50" class="d-label">GitLab CI · Group Runner · Docker Executor</text>
+
+          <g class="pkt" aria-hidden="true">
+            <circle r="7" fill="#1E6BC0" opacity=".25" class="pkt-halo"/>
+            <circle r="4.5" fill="#1E6BC0" class="pkt-core"/>
+            <animateMotion dur="7s" repeatCount="indefinite" path="M65 110 H920" keyPoints="0;1;1" keyTimes="0;0.8;1" calcMode="linear"/>
+          </g>
+
+          <rect x="10" y="78" width="110" height="64" rx="10" class="d-box"/>
+          <text x="65" y="104" class="d-t">Developer</text>
+          <text x="65" y="124" class="d-s">git push</text>
+
+          <rect x="150" y="78" width="120" height="64" rx="10" class="d-box"/>
+          <text x="210" y="104" class="d-t">Test</text>
+          <text x="210" y="124" class="d-s">unit · DB</text>
+
+          <rect x="295" y="78" width="120" height="64" rx="10" class="d-box"/>
+          <text x="355" y="104" class="d-t">Build</text>
+          <text x="355" y="124" class="d-s">:YYYY-MM-DD</text>
+
+          <rect x="440" y="78" width="110" height="64" rx="10" class="d-box d-acc"/>
+          <text x="495" y="104" class="d-t">Scan</text>
+          <text x="495" y="124" class="d-s">trivy image</text>
+
+          <path d="M625 58 682 110 625 162 568 110z" class="d-box d-acc"/>
+          <text x="625" y="107" class="d-t" style="font-size:12px">Gate</text>
+          <text x="625" y="123" class="d-s" style="font-size:10px">CRITICAL=0</text>
+
+          <rect x="705" y="78" width="130" height="64" rx="10" class="d-box"/>
+          <text x="770" y="104" class="d-t">Push</text>
+          <text x="770" y="124" class="d-s">OCI Registry</text>
+
+          <rect x="860" y="78" width="120" height="64" rx="10" class="d-box d-ok"/>
+          <text x="920" y="104" class="d-t">Notify</text>
+          <text x="920" y="124" class="d-s">MS Teams</text>
+
+          <line x1="120" y1="110" x2="146" y2="110" class="d-line" marker-end="url(#arr)"/>
+          <line x1="270" y1="110" x2="291" y2="110" class="d-line" marker-end="url(#arr)"/>
+          <line x1="415" y1="110" x2="436" y2="110" class="d-line" marker-end="url(#arr)"/>
+          <line x1="550" y1="110" x2="564" y2="110" class="d-line" marker-end="url(#arr)"/>
+          <line x1="682" y1="110" x2="701" y2="110" class="d-line d-okline" marker-end="url(#arr)"/>
+          <text x="694" y="98" class="d-s d-oktext" style="font-size:10px">pass</text>
+          <line x1="835" y1="110" x2="856" y2="110" class="d-line" marker-end="url(#arr)"/>
+
+          <line x1="625" y1="162" x2="625" y2="232" class="d-line d-badline" marker-end="url(#arrBad)"/>
+          <text x="636" y="202" class="d-s d-badtext" style="text-anchor:start">fail</text>
+          <rect x="525" y="236" width="200" height="64" rx="10" class="d-box d-bad"/>
+          <text x="625" y="262" class="d-t de">Pipeline stoppt</text><text x="625" y="262" class="d-t en">Pipeline stops</text>
+          <text x="625" y="282" class="d-s de">HIGH → nur Report</text><text x="625" y="282" class="d-s en">HIGH → report only</text>
+          <path d="M525 268 H65 V146" class="d-line d-badline d-dash" fill="none" marker-end="url(#arrBad)"/>
+          <text x="80" y="258" class="d-s d-badtext" style="text-anchor:start">fix &amp; push</text>
+
+          <rect x="755" y="236" width="225" height="64" rx="10" class="d-box d-acc"/>
+          <text x="867" y="262" class="d-t">Scheduled Scan · cron</text>
+          <text x="867" y="282" class="d-s de">alle Tags neu scannen</text><text x="867" y="282" class="d-s en">re-scan every tag</text>
+          <path d="M790 142 V232" class="d-line d-accline d-dash" fill="none" marker-end="url(#arrAcc)"/>
+          <path d="M945 232 V146" class="d-line d-accline d-dash" fill="none" marker-end="url(#arrAcc)"/>
+          <text x="800" y="196" class="d-s" style="text-anchor:start">pull</text>
+          <text x="935" y="196" class="d-s" style="text-anchor:end">report</text>
+
+          <rect x="150" y="78" width="120" height="64" rx="10" fill="none" class="glow" style="--d:0.56s"/>
+          <rect x="295" y="78" width="120" height="64" rx="10" fill="none" class="glow" style="--d:1.51s"/>
+          <rect x="440" y="78" width="110" height="64" rx="10" fill="none" class="glow" style="--d:2.46s"/>
+          <path d="M625 58 682 110 625 162 568 110z" fill="none" class="glow" style="--d:3.31s"/>
+          <rect x="705" y="78" width="130" height="64" rx="10" fill="none" class="glow" style="--d:4.19s"/>
+          <rect x="860" y="78" width="120" height="64" rx="10" fill="none" class="glow glow-ok" style="--d:5.21s"/>
+        </svg>
+      </div>
+      <ol class="legend">
+        <li><b>Test → Build</b> <span class="de">– Unit- und Datenbanktests laufen zuerst. Erst danach wird das Docker-Image gebaut und mit dem Datum getaggt, damit jede Version nachvollziehbar bleibt.</span><span class="en">– unit and database tests run first. Only then is the Docker image built and tagged with the date, so every version stays traceable.</span></li>
+        <li><b>Scan &amp; Gate</b> <span class="de">– Trivy prüft das Image auf bekannte CVEs. CRITICAL stoppt die Pipeline, HIGH wird im Report ausgewiesen.</span><span class="en">– Trivy checks the image for known CVEs. CRITICAL stops the pipeline, HIGH is listed in the report.</span></li>
+        <li><b>Push &amp; Notify</b> <span class="de">– geprüfte Images gehen mit Datums-Tag und <code>:latest</code> in eine private OCI-Registry. Das Ergebnis landet per Webhook in Microsoft Teams. Das Deployment bleibt eine manuelle Freigabe (Continuous Delivery).</span><span class="en">– approved images go to a private OCI registry with a date tag and <code>:latest</code>. The result is posted to Microsoft Teams via webhook. Deployment remains a manual release (continuous delivery).</span></li>
+        <li><b>Scheduled Scan</b> <span class="de">– ein Cron-Job scannt die Images in der Registry regelmäßig neu, weil täglich neue CVEs erscheinen. Über die Variable <code>SCAN_TAGS</code> lassen sich einzelne Versionen auswählen, ohne die Pipeline zu ändern.</span><span class="en">– a cron job re-scans the registry images regularly, because new CVEs appear every day. The <code>SCAN_TAGS</code> variable selects specific versions without changing the pipeline.</span></li>
+      </ol>
+      <div class="term-wrap">
+      <div class="term" aria-label="Beispiel: CI/CD-Pipeline mit Sicherheitsscan">
+      <div class="term-bar"><i></i><i></i><i></i><span>.gitlab-ci.yml · main</span></div>
+      <div class="term-body" id="term">
+        <div class="term-line"><span class="dim">$</span> git push origin main</div>
+        <div class="term-line"><span class="acc">▸ test</span>    dotnet test <span class="dim">(unit + db)</span></div>
+        <div class="term-line"><span class="ok">  ✓</span> all tests passed</div>
+        <div class="term-line"><span class="acc">▸ build</span>   docker build -t app:2026-05-27 .</div>
+        <div class="term-line"><span class="acc">▸ scan</span>    trivy image --severity HIGH,CRITICAL</div>
+        <div class="term-line"><span class="ok">  ✓</span> CRITICAL: 0   <span class="warn">HIGH: 2</span> <span class="dim">→ report</span></div>
+        <div class="term-line"><span class="acc">▸ push</span>    registry :2026-05-27 :latest</div>
+        <div class="term-line"><span class="acc">▸ notify</span>  <span class="ok">✓</span> Teams: pipeline passed</div>
+        <div class="term-line"><span class="dim"># deploy: manual (continuous delivery)</span></div>
+        <div class="stages" aria-hidden="true">
+          <div class="st done"><b>test</b><em>✓</em></div>
+          <div class="st done"><b>build</b><em>✓</em></div>
+          <div class="st done sec"><b>scan</b><em>✓ trivy</em></div>
+          <div class="st done"><b>push</b><em>✓</em></div>
+          <div class="st done"><b>notify</b><em>✓</em></div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </figure>
+
+    <figure class="diagram reveal">
+      <figcaption>
+        <span class="kind">Embedded · IoT · <span class="de">Bachelorarbeit</span><span class="en">Bachelor's thesis</span></span>
+        <strong><span class="de">Multisensor-Prüfstand: vom Sensor bis zur Zeitreihendatenbank</span><span class="en">Multi-sensor test rig: from sensor to time-series database</span></strong>
+        <span class="muted"><span class="de">Teil eines geförderten F&amp;E-Projekts zur Überwachung der Trinkwasserqualität</span><span class="en">Part of a funded R&amp;D project for monitoring drinking-water quality</span></span>
+      </figcaption>
+      <div class="flow">
+        <div class="node"><span class="n-k">01</span><b><span class="de">Sensoren</span><span class="en">Sensors</span></b><small><span class="de">Druck · 2× MPU6050 · HTU21D</span><span class="en">Pressure · 2× MPU6050 · HTU21D</span></small></div>
+        <div class="node acc"><span class="n-k">02</span><b><span class="de">I2C-Multiplexer</span><span class="en">I2C multiplexer</span></b><small><span class="de">TCA9548A · 8 Kanäle</span><span class="en">TCA9548A · 8 channels</span></small></div>
+        <div class="node"><span class="n-k">03</span><b>Raspberry Pi 4</b><small><span class="de">I2C-Master · Python</span><span class="en">I2C master · Python</span></small></div>
+        <div class="node"><span class="n-k">04</span><b><span class="de">Aufbereitung</span><span class="en">Processing</span></b><small><code>config.json</code> · CSV</small></div>
+        <div class="node acc"><span class="n-k">05</span><b>InfluxDB</b><small><span class="de">Docker · on-premise</span><span class="en">Docker · on-premise</span></small></div>
+        <div class="node ok"><span class="n-k">06</span><b><span class="de">Analyse</span><span class="en">Analysis</span></b><small><span class="de">FFT · Grenzwert-LED</span><span class="en">FFT · limit LED</span></small></div>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- Hardware -->
+<section class="block" id="hardware">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Embedded Hardware</p>
+      <div>
+        <h2><span class="de">Boards und Protokolle, mit denen ich arbeite</span><span class="en">Boards and protocols I work with</span></h2>
+        <p><span class="de">Vom einfachen Prototyp bis zum Edge-Rechner mit GPU: Ich wähle die Plattform danach, was das System leisten muss.</span><span class="en">From a quick prototype to a GPU edge computer: I pick the platform by what the system has to do.</span></p>
+      </div>
+    </div>
+    <div class="boards reveal">
+      <article class="board">
+        <span class="b-tag">Linux SBC</span>
+        <h3>Raspberry Pi 4</h3>
+        <p><span class="de">I2C-Master im Multisensor-Prüfstand, Python-Datenerfassung und InfluxDB-Anbindung.</span><span class="en">I2C master in the multi-sensor test rig, Python data capture and InfluxDB integration.</span></p>
+        <div class="chips"><span class="chip plain">Python</span><span class="chip plain">I2C</span><span class="chip plain">Ubuntu</span></div>
+      </article>
+      <article class="board">
+        <span class="b-tag">Wi-Fi · BLE</span>
+        <h3>ESP32</h3>
+        <p><span class="de">Vernetzte Sensorknoten, die Messwerte direkt per WLAN oder MQTT senden.</span><span class="en">Connected sensor nodes that send readings straight over Wi-Fi or MQTT.</span></p>
+        <div class="chips"><span class="chip plain">C/C++</span><span class="chip plain">MQTT</span><span class="chip plain">SPI</span></div>
+      </article>
+      <article class="board">
+        <span class="b-tag">ARM Cortex-M</span>
+        <h3>STM32</h3>
+        <p><span class="de">Hardwarenahe Programmierung für zeitkritische Steuerungs- und Messaufgaben.</span><span class="en">Low-level programming for time-critical control and measurement tasks.</span></p>
+        <div class="chips"><span class="chip plain">C</span><span class="chip plain">UART</span><span class="chip plain">SPI</span></div>
+      </article>
+      <article class="board">
+        <span class="b-tag">Prototyping</span>
+        <h3>Arduino</h3>
+        <p><span class="de">Schnelle Prototypen, um Sensoren und Aktoren zu testen, bevor sie ins System kommen.</span><span class="en">Fast prototypes to test sensors and actuators before they go into the system.</span></p>
+        <div class="chips"><span class="chip plain">C++</span><span class="chip plain">I2C</span><span class="chip plain">UART</span></div>
+      </article>
+      <article class="board">
+        <span class="b-tag">Edge AI · GPU</span>
+        <h3>NVIDIA Jetson Nano</h3>
+        <p><span class="de">Edge-Computing mit GPU, zusammen mit ROS für robotiknahe Anwendungen.</span><span class="en">GPU edge computing, combined with ROS for robotics-related applications.</span></p>
+        <div class="chips"><span class="chip plain">ROS</span><span class="chip plain">Ubuntu</span><span class="chip plain">Python</span></div>
+      </article>
+    </div>
+    <div class="proto-strip reveal" aria-label="Protokolle">
+      <span class="ps-k"><span class="de">Protokolle</span><span class="en">Protocols</span></span>
+      <span>I2C</span><span>SPI</span><span>UART</span><span>MQTT</span><span>LoRaWAN</span><span>ROS</span><span>TCP/IP</span>
+    </div>
+  </div>
+</section>
+
+<!-- Projekte -->
+<section class="block" id="projekte">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow"><span class="de">Projekte</span><span class="en">Projects</span></p>
+      <div>
+        <h2><span class="de">Ausgewählte Arbeiten</span><span class="en">Selected work</span></h2>
+        <p><span class="de">Was die Aufgabe war, wie ich sie umgesetzt habe und welche Entscheidungen ich dabei getroffen habe.</span><span class="en">What the task was, how I built it and which decisions I made along the way.</span></p>
+      </div>
+    </div>
+
+    <div class="projects">
+      <article class="case reveal">
+        <div class="case-side">
+          <span class="kind"><span class="de">Masterarbeit · 2026</span><span class="en">Master's thesis · 2026</span></span>
+          <div class="chips"><span class="chip">GitLab CI/CD</span><span class="chip">GitLab Runner</span><span class="chip">Docker Compose</span><span class="chip">Trivy</span><span class="chip">OCI Registry</span><span class="chip">Cron</span><span class="chip">MS Teams</span><span class="chip">.NET</span></div>
+        </div>
+        <div>
+          <h3>Designing and Implementing a CI/CD Pipeline Architecture with Continuous Automated Security Scans for Containerized Applications</h3>
+          <p class="orig"><span class="de">Verfasst auf Englisch · HTW Berlin · umgesetzt bei der AUCOTEAM GmbH</span><span class="en">Written in English · HTW Berlin · carried out at AUCOTEAM GmbH</span></p>
+          <dl style="margin-top:18px">
+            <dt><span class="de">Aufgabe</span><span class="en">Task</span></dt>
+            <dd><span class="de">Sicherheitsprüfungen fest in die Auslieferung von Container-Anwendungen einbauen. Hintergrund ist der EU Cyber Resilience Act, der verlangt, Schwachstellen über den gesamten Lebenszyklus zu erkennen und zu beheben.</span><span class="en">Build security checks into the delivery of containerized applications. The background is the EU Cyber Resilience Act, which requires vulnerabilities to be found and fixed across the whole lifecycle.</span></dd>
+            <dt><span class="de">Umsetzung</span><span class="en">Build</span></dt>
+            <dd><span class="de">Testumgebung mit GitLab-Server, GitLab Runner und privater Registry in Docker Compose. Pipeline mit den Stufen Test, Build, Trivy-Scan, Push und Teams-Benachrichtigung, dazu ein zeitgesteuerter Scan aller Registry-Images mit Report der CRITICAL- und HIGH-Funde als Pipeline-Artefakt.</span><span class="en">Test environment with a GitLab server, GitLab Runner and a private registry in Docker Compose. Pipeline with test, build, Trivy scan, push and Teams notification stages, plus a scheduled scan of every registry image with a report of CRITICAL and HIGH findings as a pipeline artifact.</span></dd>
+            <dt><span class="de">Entscheidungen</span><span class="en">Decisions</span></dt>
+            <dd><span class="de"><b>Registry:</b> Quay.io, GitLab Registry und private OCI-Registry verglichen. Gewählt wurde die private Registry: volle Datenhoheit und weiter verfügbar, auch wenn der GitLab-Server ausfällt. <b>Runner:</b> Project-, Group- und Shared-Runner verglichen. Gewählt wurde der Group Runner mit Docker Executor, damit alle Projekte eines Teams isoliert, aber mit gemeinsamer Konfiguration laufen.</span><span class="en"><b>Registry:</b> compared Quay.io, GitLab Registry and a private OCI registry. Chose the private registry: full data sovereignty, and it stays available even if the GitLab server is down. <b>Runner:</b> compared project, group and shared runners. Chose a group runner with the Docker executor, so all of a team's projects run isolated but share one configuration.</span></dd>
+            <dt><span class="de">Ergebnis</span><span class="en">Result</span></dt>
+            <dd><span class="de">Validiert an zwei produktiven .NET-Services: einem kleineren Service mit Unit-Tests und einer größeren API mit datenbankabhängigen Integrationstests in Test-Containern. Pakete kommen aus einer privaten NuGet-Quelle. Beide Pipelines liefen stabil über alle Stufen.</span><span class="en">Validated on two production .NET services: a smaller service with unit tests and a larger API with database-dependent integration tests in test containers. Packages come from a private NuGet source. Both pipelines ran reliably through every stage.</span></dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <div class="case-side">
+          <span class="kind"><span class="de">Bachelorarbeit · 2024</span><span class="en">Bachelor's thesis · 2024</span></span>
+          <div class="chips"><span class="chip">Raspberry Pi 4</span><span class="chip">Python</span><span class="chip">I2C</span><span class="chip">TCA9548A</span><span class="chip">MPU6050</span><span class="chip">HTU21D</span><span class="chip">InfluxDB</span><span class="chip">Docker</span><span class="chip">FFT</span></div>
+        </div>
+        <div>
+          <h3><span class="de">Multisensor-Prüfstand für die Trinkwasserüberwachung</span><span class="en">Multi-sensor test rig for drinking-water monitoring</span></h3>
+          <p class="orig">„Entwicklung und Implementierung einer Multisensorphalanx für schnelle Integrationen diverser Sensoren in einem Testaufbau“ · <span class="de">verfasst auf Deutsch</span><span class="en">written in German</span></p>
+          <dl style="margin-top:18px">
+            <dt><span class="de">Kontext</span><span class="en">Context</span></dt>
+            <dd><span class="de">Gefördertes F&amp;E-Projekt: Druck und Temperatur im Trinkwassernetz dauerhaft messen, um mikrobiologische Verunreinigungen früh zu erkennen.</span><span class="en">Funded R&amp;D project: measure pressure and temperature in the drinking-water network continuously to detect microbiological contamination early.</span></dd>
+            <dt><span class="de">Aufgabe</span><span class="en">Task</span></dt>
+            <dd><span class="de">Eine Topologie und Testumgebung entwickeln, in die sich unterschiedliche Sensoren schnell einbinden und gemeinsam auswerten lassen.</span><span class="en">Design a topology and test environment into which different sensors can be integrated quickly and evaluated together.</span></dd>
+            <dt><span class="de">Umsetzung</span><span class="en">Build</span></dt>
+            <dd><span class="de">Drucksensor, zwei MPU6050 (Beschleunigung und Gyroskop) und HTU21D (Temperatur und Feuchte) über einen TCA9548A-I2C-Multiplexer an einem Raspberry Pi 4. Ein Python-Modul pro Sensor, Konfiguration über <code>config.json</code>, Speicherung als CSV und in InfluxDB. Die Datenbank wurde nach einem Vergleich mit PostgreSQL und KairosDB gewählt und läuft on-premise in Docker. Eine LED signalisiert, wenn ein Messwert die Grenzen verlässt.</span><span class="en">Pressure sensor, two MPU6050s (acceleration and gyroscope) and an HTU21D (temperature and humidity) on a TCA9548A I2C multiplexer connected to a Raspberry Pi 4. One Python module per sensor, configuration via <code>config.json</code>, storage as CSV and in InfluxDB. The database was chosen after comparing it with PostgreSQL and KairosDB, and runs on-premise in Docker. An LED signals when a reading leaves its limits.</span></dd>
+            <dt><span class="de">Test</span><span class="en">Testing</span></dt>
+            <dd><span class="de">Sensoren erst einzeln, dann im Verbund geprüft. 72-Stunden-Dauertest ohne Fehler auf dem Bus. FFT-Analyse der Beschleunigungsdaten, denn die Rohrvibration hängt mit der Durchflussrate zusammen.</span><span class="en">Sensors tested individually, then together. 72-hour continuous test without bus errors. FFT analysis of the acceleration data, since pipe vibration correlates with the flow rate.</span></dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <div class="case-side">
+          <span class="kind">Software · AUCOTEAM</span>
+          <div class="chips"><span class="chip">C#</span><span class="chip">ASP.NET</span><span class="chip">REST API</span><span class="chip"><span class="de">KI</span><span class="en">AI</span></span></div>
+        </div>
+        <div>
+          <h3><span class="de">KI-Chatbot und API-Schicht</span><span class="en">AI chatbot and API layer</span></h3>
+          <dl style="margin-top:18px">
+            <dt><span class="de">Aufgabe</span><span class="en">Task</span></dt>
+            <dd><span class="de">Einen Chatbot trainieren und sauber an die Benutzeroberfläche anbinden.</span><span class="en">Train a chatbot and connect it cleanly to the user interface.</span></dd>
+            <dt><span class="de">Umsetzung</span><span class="en">Build</span></dt>
+            <dd><span class="de">Training der Chatbot-Modelle und Entwicklung der API zwischen Frontend und Backend mit .NET und ASP.NET.</span><span class="en">Trained the chatbot models and built the API between frontend and backend with .NET and ASP.NET.</span></dd>
+          </dl>
+        </div>
+      </article>
+      <a class="gh-cta reveal" href="https://github.com/Bakir-Alnuaimi" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+        <div><b><span class="de">Weiterer Code auf GitHub</span><span class="en">More code on GitHub</span></b><span><span class="de">Eigene Projekte in C#, Java, Python und der Quellcode dieser Website</span><span class="en">Personal projects in C#, Java, Python and the source code of this website</span></span></div>
+        <span class="gh-arrow" aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Werdegang -->
+<section class="block" id="werdegang">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow"><span class="de">Werdegang</span><span class="en">Experience</span></p>
+      <div>
+        <h2><span class="de">Beruf und Ausbildung</span><span class="en">Work and education</span></h2>
+        <p><span class="de">Der vollständige Lebenslauf steht als PDF zum Download bereit.</span><span class="en">The full CV is available as a PDF download.</span> <a href="cv/Bakir_Zanoun_Lebenslauf.pdf" download><span class="de">Lebenslauf herunterladen</span><span class="en">Download CV</span></a></p>
+      </div>
+    </div>
+    <ol class="tl reveal">
+      <li>
+        <div class="when">07/2023 – 09/2026<span>Berlin</span><span class="badge"><span class="de">3 Jahre</span><span class="en">3 years</span></span></div>
+        <div>
+          <h3><span class="de">Werkstudent Softwareentwicklung</span><span class="en">Working Student, Software Development</span></h3>
+          <p class="org">AUCOTEAM GmbH</p>
+          <ul>
+            <li><span class="de">Konzeption und Umsetzung einer GitLab-CI/CD-Pipeline (DevSecOps) für Container: Test, Build, Trivy-Scan, Push in eine private OCI-Registry, Benachrichtigung in Microsoft Teams</span><span class="en">Designed and built a GitLab CI/CD pipeline (DevSecOps) for containers: test, build, Trivy scan, push to a private OCI registry, Microsoft Teams notification</span></li>
+            <li><span class="de">Zeitgesteuerte Re-Scans aller Registry-Images auf neue CVEs, eingeführt für zwei produktive .NET-Services</span><span class="en">Scheduled re-scans of all registry images for new CVEs, rolled out for two production .NET services</span></li>
+            <li><span class="de">Multisensor-Prüfstand für ein gefördertes Trinkwasser-Projekt: Raspberry Pi 4, I2C-Multiplexer, Python, InfluxDB in Docker</span><span class="en">Multi-sensor test rig for a funded drinking-water project: Raspberry Pi 4, I2C multiplexer, Python, InfluxDB in Docker</span></li>
+            <li><span class="de">F&amp;E-Projekte zu Embedded Systems und IoT-Lösungen auf Basis von LoRaWAN und MQTT</span><span class="en">R&amp;D projects on embedded systems and IoT solutions based on LoRaWAN and MQTT</span></li>
+            <li><span class="de">Entwicklung von Softwareanwendungen mit .NET, C# und ASP.NET</span><span class="en">Software development with .NET, C# and ASP.NET</span></li>
+            <li><span class="de">Training von KI-Chatbot-Modellen und Entwicklung der API zwischen Frontend und Backend</span><span class="en">Trained AI chatbot models and developed the API between frontend and backend</span></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="when">10/2024 – 09/2026<span>Berlin</span><span class="badge"><span class="de">Abschluss 22.09.2026</span><span class="en">Graduated 22 Sep 2026</span></span></div>
+        <div>
+          <h3>Master of Engineering (M.Eng.) in Computer Engineering</h3>
+          <p class="org">HTW Berlin – Hochschule für Technik und Wirtschaft</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">10/2021 – 03/2024<span>Berlin</span></div>
+        <div>
+          <h3>Bachelor of Engineering (B.Eng.) in Computer Engineering</h3>
+          <p class="org">HTW Berlin – Hochschule für Technik und Wirtschaft</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">03/2022 – 12/2022<span>Berlin</span></div>
+        <div>
+          <h3><span class="de">Helfer in der Flüchtlingshilfe</span><span class="en">Refugee Aid Volunteer</span></h3>
+          <p class="org">Johanniter-Unfall-Hilfe · <span class="de">Ukraine-Ankunftszentrum Tegel</span><span class="en">Ukraine arrival centre, Tegel</span></p>
+        </div>
+      </li>
+      <li>
+        <div class="when">09/2019 – 02/2020<span>Berlin</span></div>
+        <div>
+          <h3><span class="de">Call-Center-Agent (Identitätsprüfung)</span><span class="en">Identity Verification Agent</span></h3>
+          <p class="org">hello.de <span class="de">für</span><span class="en">for</span> IDnow</p>
+          <ul>
+            <li><span class="de">Video-Ident: Echtheitsprüfung von Ausweisdokumenten aus aller Welt</span><span class="en">Video identification: verified ID documents from around the world</span></li>
+            <li><span class="de">Erkennung von Betrugsversuchen und Social-Engineering-Angriffen</span><span class="en">Detected fraud attempts and social-engineering attacks</span></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="when">09/2018 – 08/2021<span>Berlin</span></div>
+        <div>
+          <h3><span class="de">Informationstechnischer Assistent + Fachabitur</span><span class="en">IT Technician Diploma + Advanced Technical College Certificate</span></h3>
+          <p class="org"><span class="de">Staatlich geprüft · AUCOTEAM Berufsfachschule, Berlin-Pankow</span><span class="en">State-certified · AUCOTEAM vocational school, Berlin-Pankow</span></p>
+        </div>
+      </li>
+      <li>
+        <div class="when">10/2017 – 02/2018<span>Erfurt</span></div>
+        <div>
+          <h3><span class="de">Aushilfskraft Lagerlogistik</span><span class="en">Warehouse Logistics Assistant</span></h3>
+          <p class="org">Zalando GmbH</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- Kenntnisse -->
+<section class="block" id="kenntnisse">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow"><span class="de">Kenntnisse</span><span class="en">Skills</span></p>
+      <div>
+        <h2><span class="de">Technologien, mit denen ich arbeite</span><span class="en">Technology I work with</span></h2>
+        <p><span class="de">Jeweils mit dem Ort, an dem ich sie eingesetzt habe.</span><span class="en">Each listed with where I have used it.</span></p>
+      </div>
+    </div>
+    <div class="skills reveal">
+      <div class="sk"><h3>CI/CD &amp; DevSecOps</h3>
+        <div class="chips"><span class="chip">GitLab CI/CD</span><span class="chip">GitLab Runner</span><span class="chip">Trivy</span><span class="chip">Cron-Schedules</span><span class="chip">Teams-Webhooks</span></div>
+        <p><span class="de">Pipeline mit Push- und Scheduled-Scan in der Masterarbeit.</span><span class="en">Pipeline with push and scheduled scans in my master's thesis.</span></p></div>
+      <div class="sk"><h3><span class="de">Container &amp; Infrastruktur</span><span class="en">Containers &amp; infrastructure</span></h3>
+        <div class="chips"><span class="chip">Docker</span><span class="chip">Docker Compose</span><span class="chip">OCI Registry</span><span class="chip">Linux / Ubuntu</span><span class="chip"><span class="de">Netzwerke</span><span class="en">Networking</span></span><span class="chip">Git</span></div>
+        <p><span class="de">GitLab, Runner, Registry und InfluxDB selbst in Containern betrieben.</span><span class="en">Ran GitLab, runner, registry and InfluxDB in containers myself.</span></p></div>
+      <div class="sk"><h3><span class="de">Programmiersprachen</span><span class="en">Programming languages</span></h3>
+        <div class="chips"><span class="chip">C#</span><span class="chip">Python</span><span class="chip">C</span><span class="chip">C++</span><span class="chip">Bash</span></div>
+        <p><span class="de">C# für .NET-Services, Python für Sensorik, Bash in CI-Jobs.</span><span class="en">C# for .NET services, Python for sensors, Bash in CI jobs.</span></p></div>
+      <div class="sk"><h3>Frameworks &amp; Web</h3>
+        <div class="chips"><span class="chip">.NET</span><span class="chip">ASP.NET</span><span class="chip">REST API</span><span class="chip">NuGet</span><span class="chip">HTML · CSS · JS</span></div>
+        <p><span class="de">Anwendungen und Chatbot-API bei AUCOTEAM, dazu Webseiten wie diese.</span><span class="en">Applications and the chatbot API at AUCOTEAM, plus websites like this one.</span></p></div>
+      <div class="sk"><h3>Embedded &amp; IoT</h3>
+        <div class="chips"><span class="chip">Raspberry Pi</span><span class="chip">ESP32</span><span class="chip">STM32</span><span class="chip">Arduino</span><span class="chip">Jetson Nano</span><span class="chip">ROS</span><span class="chip">I2C · SPI · UART</span><span class="chip">MQTT</span><span class="chip">LoRaWAN</span></div>
+        <p><span class="de">Multisensor-Prüfstand, F&amp;E-Projekte und eigene Prototypen.</span><span class="en">Multi-sensor test rig, R&amp;D projects and my own prototypes.</span></p></div>
+      <div class="sk"><h3><span class="de">Daten &amp; Analyse</span><span class="en">Data &amp; analysis</span></h3>
+        <div class="chips"><span class="chip">InfluxDB</span><span class="chip"><span class="de">Zeitreihen</span><span class="en">Time series</span></span><span class="chip">CSV</span><span class="chip"><span class="de">FFT-Analyse</span><span class="en">FFT analysis</span></span></div>
+        <p><span class="de">Sensordaten speichern und Schwingungen auswerten.</span><span class="en">Storing sensor data and analysing vibration.</span></p></div>
+      <div class="sk"><h3><span class="de">Weitere Kenntnisse</span><span class="en">Further skills</span></h3>
+        <div class="chips"><span class="chip plain">Jira</span><span class="chip plain"><span class="de">Automatisierungstechnik</span><span class="en">Automation engineering</span></span><span class="chip plain"><span class="de">KI / Chatbots</span><span class="en">AI / chatbots</span></span><span class="chip plain">AutoCAD</span></div></div>
+      <div class="sk"><h3><span class="de">Zertifikate</span><span class="en">Certificates</span></h3>
+        <div class="chips"><span class="chip plain"><span class="de">Einführung EU-DSGVO</span><span class="en">Introduction to EU GDPR</span></span><span class="chip plain">Basic Privacy Training</span><span class="chip plain"><span class="de">Führerschein B</span><span class="en">Driving licence B</span></span></div>
+        <p>IITR Datenschutz GmbH · 10/2019</p></div>
+    </div>
+
+    <div class="langs reveal">
+      <div class="lang"><div><b><span class="de">Arabisch</span><span class="en">Arabic</span></b><small><span class="de">Muttersprache</span><span class="en">Native</span></small></div><div class="bars" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div></div>
+      <div class="lang"><div><b><span class="de">Deutsch</span><span class="en">German</span></b><small><span class="de">Fließend</span><span class="en">Fluent</span></small></div><div class="bars" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div></div>
+      <div class="lang"><div><b><span class="de">Englisch</span><span class="en">English</span></b><small><span class="de">Fließend</span><span class="en">Fluent</span></small></div><div class="bars" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div></div>
+      <div class="lang"><div><b><span class="de">Französisch</span><span class="en">French</span></b><small><span class="de">Grundkenntnisse</span><span class="en">Basic</span></small></div><div class="bars" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Kontakt -->
+<section class="block" id="kontakt">
+  <div class="container">
+    <div class="contact-card reveal">
+      <div>
+        <h2><span class="de">Lassen Sie uns sprechen.</span><span class="en">Let's talk.</span></h2>
+        <p><span class="de">Ich suche eine Festanstellung in Softwareentwicklung, DevOps oder Embedded/IoT – in Berlin oder remote. Ich freue mich über Ihre Nachricht.</span><span class="en">I am looking for a full-time role in software development, DevOps or embedded/IoT, in Berlin or remote. I look forward to hearing from you.</span></p>
+      </div>
+      <div class="contact-list">
+        <div class="cl"><div><div class="k">E-Mail</div><a class="v" style="color:inherit;text-decoration:none" href="mailto:bakirzanoun@gmail.com" id="mail">bakirzanoun@gmail.com</a></div><button class="copy" type="button" id="copyMail"><span class="de">Kopieren</span><span class="en">Copy</span></button></div>
+        <a class="cl" href="https://www.linkedin.com/in/bakir-zanoun-226b09108" target="_blank" rel="noopener"><div><div class="k">LinkedIn</div><div class="v">linkedin.com/in/bakir-zanoun</div></div><span aria-hidden="true">↗</span></a>
+        <a class="cl" href="cv/Bakir_Zanoun_Lebenslauf.pdf" download><div><div class="k"><span class="de">Lebenslauf</span><span class="en">CV</span></div><div class="v">Bakir_Zanoun_Lebenslauf.pdf</div></div><span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© 2026 Abo Bakir Fawaz Zanoun · Berlin</span>
+    <span><span class="de">Keine Cookies, kein Tracking, Schriften lokal gehostet.</span><span class="en">No cookies, no tracking, fonts self-hosted.</span></span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js?v=7"></script>
+</body>
+</html>

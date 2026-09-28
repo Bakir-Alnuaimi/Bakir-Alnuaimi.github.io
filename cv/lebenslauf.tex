@@ -1,0 +1,239 @@
+
+\documentclass[10pt,a4paper]{article}
+ 
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[scaled=0.92]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+
+\usepackage[a4paper,left=1.6cm,right=1.6cm,top=0.9cm,bottom=0.8cm]{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{paracol}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+ 
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\columnsep}{1.0cm}
+ 
+% ---------------------------------------------------------------------
+%  Farben
+% ---------------------------------------------------------------------
+\definecolor{accent}{HTML}{2E7DD1}
+\definecolor{linkblue}{HTML}{1A0DAB}
+\definecolor{softgray}{HTML}{8A8A8A}
+\definecolor{tagbg}{HTML}{ECECEC}
+\definecolor{barbg}{HTML}{E4F1FA}
+\definecolor{dotoff}{HTML}{C8C8C8}
+ 
+% ---------------------------------------------------------------------
+%  Icons
+% ---------------------------------------------------------------------
+\usepackage{marvosym}
+\newcommand{\faPhone}{\Mobilefone}
+\newcommand{\faEnvelope}{\Letter}
+\newcommand{\faGlobe}{\ComputerMouse}
+\newcommand{\faLinkedin}{\textbf{in}}
+\newcommand{\faGithub}{\textbf{GH}}
+\newcommand{\faMapMarker}{\Mundus}
+ 
+% ---------------------------------------------------------------------
+%  Bausteine
+% ---------------------------------------------------------------------
+% Abschnittsüberschrift mit Linie
+\newcommand{\cvsection}[1]{%
+  \vspace{7pt}%
+  {\large\bfseries\MakeUppercase{#1}}\\[-7pt]
+  \rule{\linewidth}{0.6pt}\par\vspace{4pt}}
+ 
+% Eintrag: {Titel}{Institution}{Zeitraum}{Ort}
+\newcommand{\cventry}[4]{%
+  {\bfseries #1}\par
+  {\itshape\color{black!75}#2}\par
+  {\small\color{softgray}#3\hspace{1.2em}#4}\par\vspace{3pt}}
+ 
+% Aufzählung
+\newenvironment{cvitems}{%
+  \begin{itemize}[leftmargin=1.2em,topsep=3pt,itemsep=2pt,parsep=0pt,label=\textbullet]}%
+  {\end{itemize}\vspace{4pt}}
+ 
+% Blauer Balken für Skill-Kategorien
+\newcommand{\skillhead}[1]{%
+  \par\vspace{2pt}%
+  \colorbox{barbg}{\parbox{\dimexpr\linewidth-2\fboxsep}{\bfseries #1}}\par\vspace{3pt}}
+ 
+% Graue "Pill"-Tags
+\newtcbox{\skilltag}{on line, colback=tagbg, colframe=tagbg, arc=6pt,
+  boxsep=0pt, left=6pt, right=6pt, top=2.5pt, bottom=2.5pt,
+  boxrule=0pt, fontupper=\small\bfseries\color{black!80}}
+ 
+% Sprach-Punkte: \langdots{gefüllt}{gesamt}
+\newcommand{\langdots}[2]{%
+  \foreach \i in {1,...,#2}{%
+    \ifnum\i>#1 {\color{dotoff}\textbullet}\else{\color{accent}\textbullet}\fi}}
+ 
+% Link
+\newcommand{\cvlink}[2]{\href{#1}{\color{linkblue}#2}}
+ 
+% Foto: foto.jpeg im Projektordner, wird rund zugeschnitten
+% Ohne Datei erscheint ein grauer Platzhalter.
+\newcommand{\cvphoto}{%
+  \begin{tikzpicture}
+    \IfFileExists{foto.jpeg}{%
+      \begin{scope}
+        \clip (0,0) circle (1.25cm);
+        \node at (0,-0.30) {\includegraphics[width=4.2cm]{foto.jpeg}};
+      \end{scope}
+      \draw[accent, line width=1.2pt] (0,0) circle (1.25cm);
+    }{%
+      \fill[accent] (0,0) circle (1.25cm);
+      \node[text=white,font=\fontsize{26}{28}\selectfont\bfseries] at (0,0) {BZ};
+    }
+  \end{tikzpicture}}
+ 
+% =====================================================================
+\begin{document}
+ 
+% --------------------------- KOPFZEILE -------------------------------
+\begin{minipage}[c]{3.0cm}
+  \cvphoto
+\end{minipage}%
+\hspace{0.6cm}%
+\begin{minipage}[c]{\dimexpr\linewidth-3.6cm}
+  {\fontsize{28}{32}\selectfont\MakeUppercase{Abo Bakir Fawaz Zanoun}}\par\vspace{4pt}
+  {\Large\color{accent}Computer Engineer (M.Eng.) \textbar{} Software, DevOps \& IoT}\par\vspace{6pt}
+  \small
+  \faPhone~0157\,/\,32236600\hspace{1.2em}
+  \faEnvelope~\cvlink{mailto:bakirzanoun@gmail.com}{bakirzanoun@gmail.com}\hspace{1.2em}
+  \faGlobe~\cvlink{https://bakirzanoun.de}{bakirzanoun.de}
+  \par\vspace{3pt}
+    \faLinkedin~\cvlink{https://www.linkedin.com/in/bakir-zanoun-226b09108}{linkedin.com/in/bakir-zanoun}
+  \hspace{1.2em}
+  \faGithub~\cvlink{https://github.com/Bakir-Alnuaimi}{github.com/Bakir-Alnuaimi}
+  \par\vspace{3pt}
+  {\color{black!75}\faMapMarker~Berlin, Deutschland\hspace{1.2em}Staatsangehörigkeit: Deutsch}
+\end{minipage}
+ 
+\vspace{6pt}
+ 
+% --------------------------- ZWEI SPALTEN ----------------------------
+\columnratio{0.5}
+\begin{paracol}{2}
+ 
+% ============================ LINKS ==================================
+\cvsection{Ausbildung}
+ 
+\cventry{Master of Engineering (M.Eng.) in Computer Engineering}
+        {HTW Berlin – Hochschule für Technik und Wirtschaft}
+        {10/2024 – 09/2026}{Berlin}
+\begin{cvitems}
+  \item Abschluss am 22.09.2026 \textbar{} Masterarbeit \textbf{auf Englisch}
+\end{cvitems}
+ 
+\cventry{Bachelor of Engineering (B.Eng.) in Computer Engineering}
+        {HTW Berlin – Hochschule für Technik und Wirtschaft}
+        {10/2021 – 03/2024}{Berlin}
+\begin{cvitems}
+  \item Bachelorarbeit \textbf{auf Deutsch} (F\&E-Projekt bei AUCOTEAM, Trinkwasserüberwachung)
+\end{cvitems}
+ 
+\cventry{Informationstechnischer Assistent + Fachabitur}
+        {Staatlich geprüft -- AUCOTEAM Berufsfachschule, Berlin-Pankow}
+        {09/2018 – 08/2021}{Berlin}
+ 
+\cvsection{Berufserfahrung}
+ 
+\cventry{Werkstudent Softwareentwicklung}
+        {AUCOTEAM GmbH}
+        {07/2023 – 09/2026}{Berlin}
+\begin{cvitems}
+  \item GitLab-CI/CD-Pipeline (DevSecOps) für Container kon\-zi\-piert und umgesetzt: Test, Build, Trivy-Scan, Push, Teams-Alarm
+  \item Zeitgesteuerte Re-Scans der Registry auf neue CVEs für zwei produktive .NET-Services
+  \item Multisensor-Prüfstand im Förderprojekt zur Trink\-wasser\-über\-wachung (Raspberry Pi, I2C, Python, InfluxDB)
+  \item F\&E-Projekte zu Embedded Systems und IoT-Lösungen mit LoRaWAN und MQTT
+  \item Softwareentwicklung mit .NET, C\# und ASP.NET; KI-Chatbot inkl. API zwischen Frontend und Backend
+\end{cvitems}
+ 
+\cventry{Helfer in der Flüchtlingshilfe}
+        {Johanniter-Unfall-Hilfe – Ukraine-Ankunftszentrum Tegel}
+        {03/2022 – 12/2022}{Berlin}
+ 
+\cventry{Call-Center-Agent (Identitätsprüfung)}
+        {hello.de für IDnow}
+        {09/2019 – 02/2020}{Berlin}
+\begin{cvitems}
+  \item Identitätsprüfung per Video-Ident: Echtheitsprüfung von Ausweisdokumenten aus aller Welt
+  \item Erkennung von Betrugsversuchen und Social-Engineering-Angriffen
+\end{cvitems}
+ 
+\cventry{Aushilfskraft Lagerlogistik}
+        {Zalando GmbH}
+        {10/2017 – 02/2018}{Erfurt}
+{\small Konfektionierung, IT-gestützte Lagerverwaltung}\par\vspace{4pt}
+ 
+\cventry{Krankenpflegepraktikum}
+        {HELIOS Klinikum Gotha}
+        {04/2017}{Gotha}
+{\small Grundpflege, Pflegedokumentation, Übersetzung (DE–AR)}\par
+ 
+% ============================ RECHTS =================================
+\switchcolumn
+ 
+\cvsection{Technische Kenntnisse}
+{\raggedright
+ 
+\skillhead{Programmiersprachen:}
+\skilltag{C\#} \skilltag{Python} \skilltag{C} \skilltag{C++} \skilltag{Bash}
+ 
+\skillhead{Frameworks \& Web:}
+\skilltag{.NET} \skilltag{ASP.NET} \skilltag{REST API} \skilltag{HTML/CSS/JS}
+ 
+\skillhead{DevOps \& Security:}
+\skilltag{GitLab CI/CD} \skilltag{GitLab Runner} \skilltag{Trivy} \skilltag{Docker} \skilltag{Docker Compose} \skilltag{OCI Registry}
+ 
+\skillhead{Embedded \& IoT:}
+\skilltag{Raspberry Pi} \skilltag{ESP32} \skilltag{STM32} \skilltag{Arduino} \skilltag{Jetson Nano} \skilltag{ROS} \skilltag{I2C} \skilltag{SPI} \skilltag{UART} \skilltag{MQTT} \skilltag{LoRaWAN} \skilltag{InfluxDB}
+ 
+\skillhead{Systeme \& Tools:}
+\skilltag{Linux/Ubuntu} \skilltag{Netzwerke} \skilltag{Jira} \skilltag{Git} \skilltag{KI / Chatbots} \skilltag{AutoCAD}\par}
+ 
+\cvsection{Abschlussarbeiten}
+ 
+{\bfseries Masterarbeit} {\small\color{softgray}(verfasst auf Englisch)}\par
+\textit{Designing and Implementing a CI/CD Pipeline Architecture with Continuous Automated Security Scans for Containerized Applications}\par
+\vspace{8pt}
+ 
+{\bfseries Bachelorarbeit} {\small\color{softgray}(verfasst auf Deutsch)}\par
+\textit{Entwicklung und Implementierung einer Multisensorphalanx für schnelle Integrationen diverser Sensoren in einem Testaufbau}\par
+ 
+\cvsection{Zertifikate}
+ 
+\begin{cvitems}
+  \item \textbf{Einführung EU-DSGVO} – IITR Datenschutz GmbH {\color{softgray}(10/2019)}
+  \item \textbf{Basic Privacy Training} – IITR Datenschutz GmbH {\color{softgray}(10/2019)}
+  \item \textbf{Führerschein Klasse B}
+\end{cvitems}
+ 
+\cvsection{Sprachen}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}l@{\hspace{1em}}l@{\hspace{0.6em}}l@{}}
+  \textbf{Arabisch:}    & \langdots{5}{5} & Muttersprache \\
+  \textbf{Deutsch:}     & \langdots{5}{5} & Fließend \\
+  \textbf{Englisch:}    & \langdots{4}{5} & Fließend \\
+  \textbf{Französisch:} & \langdots{1}{5} & Grundkenntnisse \\
+\end{tabular}
+ 
+\cvsection{Ehrenamt \& Interessen}
+\textbf{Ehrenamtlicher Übersetzer} (Deutsch – Arabisch)\par\vspace{3pt}
+Schwimmen, Musizieren und Gitarre spielen
+ 
+\vspace{12pt}
+{\small\color{softgray}Berlin, September 2026}
+ 
+\end{paracol}
+ 
+\end{document}
